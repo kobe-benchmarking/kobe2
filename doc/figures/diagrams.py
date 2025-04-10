@@ -23,7 +23,7 @@ def make_diagram():
 
 def make_system_block( dia, shape, position, width=None, height=None, label=None ):
     constr = dia[shape]
-    options = dia["style"] + ",fill=green!25,draw=green!60!black"
+    options = dia["style"] + ",fill=SpringGreen!25,draw=SpringGreen!60!black"
     if (width is not None) and (height is not None):
         my_width = width
         my_height = height
@@ -32,7 +32,7 @@ def make_system_block( dia, shape, position, width=None, height=None, label=None
         my_height = 1.5
     retv = constr( position, width=my_width, height=my_height, options=options )
     if label is not None:
-        dia["diagram"].node( retv.center, options="align=center,text=black!50!green", text=label )
+        dia["diagram"].node( retv.center, options="align=center,text=black!50!SpringGreen", text=label )
     return retv
 
 
@@ -53,7 +53,7 @@ def make_web_block( dia, shape, position, width=None, height=None, label=None ):
 
 def make_data_block( dia, shape, position, width=None, height=None, label=None ):
     constr = dia[shape]
-    options = dia["style"] + ",fill=orange!20,draw=orange!80,rounded corners=0.4cm"
+    options = dia["style"] + ",fill=Goldenrod!20,draw=Goldenrod!80,rounded corners=0.4cm"
     if (width is not None) and (height is not None):
         my_width = width
         my_height = height
@@ -62,7 +62,7 @@ def make_data_block( dia, shape, position, width=None, height=None, label=None )
         my_height = 1.5
     retv = constr( position, width=my_width, height=my_height, options=options )
     if label is not None:
-        dia["diagram"].node( retv.center, options="align=center,text=black!50!orange", text=label )
+        dia["diagram"].node( retv.center, options="align=center,text=black!50!Goldenrod", text=label )
     return retv
 
 
@@ -74,17 +74,17 @@ def make_kobe_block( dia, shape, position, width=None, height=None, label=None )
         my_width = 3
         my_height = 2
     constr = dia[shape]
-    options = dia["style"] + ",fill=blue!20,draw=blue!60"
+    options = dia["style"] + ",fill=RoyalBlue!20,draw=RoyalBlue!60"
     retv = constr( position, width=my_width, height=my_height, options=options )
     if label is not None:
-        dia["diagram"].node( retv.center, options="align=center,text=black!50!blue", text=label )
+        dia["diagram"].node( retv.center, options="align=center,text=black!50!RoyalBlue", text=label )
     return retv
 
 
 def make_kobe_wrapper( dia, shape, position, width=3.5, height=2.5, label="" ):
 
     retv = make_kobe_block( dia, shape, position, width, height )
-    dia["diagram"].node( retv.north - (0,0.5), options="align=center,text=black!50!blue", text="KOBE Wrapper" )
+    dia["diagram"].node( retv.north - (0,0.5), options="align=center,text=black!50!RoyalBlue", text="KOBE Wrapper" )
     make_system_block( dia, "rect_s", retv.south + (0,0.2), label=label )
     return retv
 
@@ -156,8 +156,8 @@ def make_diagramsA():
     make_componentsA( dia )
     dia["diagram"].compile( "diagram_A1.pdf" )
 
-    arrow_kobe = "blue!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
-    arrow_file = "orange!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
+    arrow_kobe = "RoyalBlue!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
+    arrow_file = "Goldenrod!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
 
     dia = make_diagram()
     make_componentsA( dia )
@@ -227,8 +227,8 @@ def make_diagramsB():
     dia = make_diagram()
     make_componentsB( dia )
 
-    arrow_kobe = "blue!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
-    arrow_file = "orange!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
+    arrow_kobe = "RoyalBlue!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
+    arrow_file = "Goldenrod!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
 
     dia = make_diagram()
     make_componentsB( dia )
@@ -273,8 +273,8 @@ def make_componentsC( dia ):
 
 def make_diagramsC():
 
-    arrow_kobe = "blue!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
-    arrow_file = "orange!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
+    arrow_kobe = "RoyalBlue!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
+    arrow_file = "Goldenrod!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
     arrow_webapi = "black!60!gray, rounded corners=7pt, ultra thick, ->, >=stealth"
 
     dia = make_diagram()
@@ -319,8 +319,8 @@ def make_componentsD( dia ):
 
 def make_diagramsD():
 
-    arrow_kobe = "blue!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
-    arrow_file = "orange!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
+    arrow_kobe = "RoyalBlue!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
+    arrow_file = "Goldenrod!80!black, rounded corners=7pt, ultra thick, ->, >=stealth"
     arrow_webapi = "black!60!gray, rounded corners=7pt, ultra thick, ->, >=stealth"
 
     dia = make_diagram()
