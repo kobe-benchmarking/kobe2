@@ -12,27 +12,7 @@
 *.cb2
 .*.lb
 
-## Intermediate documents:
-*.dvi
-*.xdv
-*-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
-
-## Generated if empty string is given at "Please type another file name for output:"
-.pdf
-
-## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
-*.bbl-SAVE-ERROR
-*.bcf
-*.bcf-SAVE-ERROR
-*.blg
-*-blx.aux
-*-blx.bib
-*.run.xml
+doc/figures/*.pdf
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
@@ -44,20 +24,6 @@
 *.rubbercache
 rubber.cache
 
-## Build tool directories for auxiliary files
-# latexrun
-latex.out/
-
-## Auxiliary and intermediate files from other packages:
-# algorithms
-*.alg
-*.loa
-
-# achemso
-acs-*.bib
-
-# amsthm
-*.thm
 
 # beamer
 *.nav
@@ -65,85 +31,12 @@ acs-*.bib
 *.snm
 *.vrb
 
-# changes
-*.soc
-
-# comment
-*.cut
-
-# cprotect
-*.cpt
-
-# elsarticle (documentclass of Elsevier journals)
-*.spl
-
-# endnotes
-*.ent
-
-# fixme
-*.lox
-
 # feynmf/feynmp
 *.mf
 *.mp
 *.t[1-9]
 *.t[1-9][0-9]
 *.tfm
-
-#(r)(e)ledmac/(r)(e)ledpar
-*.end
-*.?end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
-
-# glossaries
-*.acn
-*.acr
-*.glg
-*.glo
-*.gls
-*.glsdefs
-*.lzo
-*.lzs
-*.slg
-*.slo
-*.sls
-
-# uncomment this for glossaries-extra (will ignore makeindex's style files!)
-# *.ist
-
-# gnuplot
-*.gnuplot
-*.table
-
-# gnuplottex
-*-gnuplottex-*
-
-# gregoriotex
-*.gaux
-*.glog
-*.gtex
-
-# htlatex
-*.4ct
-*.4tc
-*.idv
-*.lg
-*.trc
-*.xref
-
-# hypdoc
-*.hd
 
 # hyperref
 *.brf
@@ -174,37 +67,13 @@ acs-*.bib
 *.slt[0-9]*
 *.stc[0-9]*
 
-# minted
-_minted*
-*.pyg
-
-# morewrites
-*.mw
-
-# newpax
-*.newpax
-
 # nomencl
 *.nlg
 *.nlo
 *.nls
 
-# pax
-*.pax
-
 # pdfpcnotes
 *.pdfpc
-
-# sagetex
-*.sagetex.sage
-*.sagetex.py
-*.sagetex.scmd
-
-# scrwfile
-*.wrt
-
-# svg
-svg-inkscape/
 
 # sympy
 *.sout
@@ -215,16 +84,6 @@ sympy-plots-for-*.tex/
 *.upa
 *.upb
 
-# pythontex
-*.pytxcode
-pythontex-files-*/
-
-# tcolorbox
-*.listing
-
-# thmtools
-*.loe
-
 # TikZ & PGF
 *.dpth
 *.md5
@@ -233,49 +92,11 @@ pythontex-files-*/
 # titletoc
 *.ptc
 
-# todonotes
-*.tdo
-
-# vhistory
-*.hst
-*.ver
-
-# easy-todo
-*.lod
-
 # xcolor
 *.xcp
 
 # xmpincl
 *.xmpi
-
-# xindy
-*.xdy
-
-# xypic precompiled matrices and outlines
-*.xyc
-*.xyd
-
-# endfloat
-*.ttt
-*.fff
-
-# Latexian
-TSWLatexianTemp*
-
-## Editors:
-# WinEdt
-*.bak
-*.sav
-
-# Texpad
-.texpadtmp
-
-# LyX
-*.lyx~
-
-# Kile
-*.backup
 
 # gummi
 .*.swp
@@ -290,19 +111,3 @@ TSWLatexianTemp*
 ./auto/*
 *.el
 
-# expex forward references with \gathertags
-*-tags.tex
-
-# standalone packages
-*.sta
-
-# Makeindex log files
-*.lpz
-
-# xwatermark package
-*.xwm
-
-# REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
-# option is specified. Footnotes are the stored in a file with suffix Notes.bib.
-# Uncomment the next line to have this generated file ignored.
-#*Notes.bib
